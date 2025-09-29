@@ -1,0 +1,17 @@
+#hamburger{
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    background: none;
+    border: none;
+    cursor: pointer;    
+
+}
+#hamburger li{
+    display: block;
+    width: 25px;
+    height: 3px;
+    background-color: black;
+    border-radius: 2px;
+
+}
