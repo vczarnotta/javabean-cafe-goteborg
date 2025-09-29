@@ -1,0 +1,29 @@
+
+#menu {
+    display: none;
+    flex-direction: column;
+    background-color: #333;
+    position: absolute;
+    top: 50px;
+    right: 0;
+    width: 200px;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+#menu a {
+    color: white;
+    text-decoration: none;
+    padding: 8px 0;
+    display: block;
+}
+
+#hamburger {
+    font-size: 24px;
+    cursor: pointer;
+}
+
+/* Menyn synlig när den har 'open'-klassen */
+#menu.open {
+    display: flex;
+}
