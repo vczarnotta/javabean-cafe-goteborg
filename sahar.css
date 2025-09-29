@@ -56,6 +56,14 @@ header {
     }
     #meny.show {
         display: flex; /* show menu when toggled */
+        flex-direction: column;
+        gap: 10px;
+        background-color: #f8f8f8; 
+    padding: 10px;
+    border-radius: 5px;
+    position: absolute; 
+    top: 60px; 
+    right: 20px; 
     }
 }
 
