@@ -1,7 +1,9 @@
-const hamburger = document.getElementById("humberger");
-const menu = document.getElementById("menu");
+document.addEventListener("DOMContentLoaded", function () {
+  const hamburger = document.getElementById("humberger");
+  const menu = document.getElementById("menu");
 
-hamburger.addEventListener("click", () => {
-  menu.classList.toggle("hidden");
-  menu.classList.toggle("open");
+  hamburger.addEventListener("click", function () {
+    menu.classList.toggle("hidden");
+    menu.classList.toggle("open");
+  });
 });
