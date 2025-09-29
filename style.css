@@ -1,0 +1,84 @@
+/*Nollställning*/
+
+* {
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+a {
+    text-decoration: none;
+    color: #000;
+}
+
+/*Header */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px;
+    background-color: #6F686D;
+}
+
+h1 {
+    font-size: 1.2rem;
+    font-weight: normal;
+    letter-spacing: 0.1rem;
+    color: #f4f4f4;
+}
+
+/*Menyn*/
+
+#menu {
+    display: none; /*Gömmer menyn som default*/
+    list-style: none;
+    padding: 0;
+    text-align: center;
+}
+
+#menu.open {
+    display: flex; /*Visar menyn när klassen "open" är aktiv/*/
+    flex-direction: column;
+    background-color: white;
+    /*Lägger menyn över allt annat och att den tar upp hela skärmen*/
+    z-index: 9999;
+    height: 100vh;
+    width: 100vw;
+    position: fixed;
+    top: 53px; /*Visar fortfarande header*/
+    left: 0; /*Så den börjar från vänster*/
+}
+
+#menu.open li {
+    padding: 20px;
+    border-bottom: 1px solid #D8D0C1;
+}
+
+#menu a {
+    text-decoration: none;
+    color: #f4f4f4;
+}
+
+/*Responsivitet*/
+
+@media (min-width: 768px) {
+    h1 {
+        font-size: 1.75rem;
+    }
+
+    header > * {
+        margin: 0px 30px;
+    }
+
+    #hamburger {
+        display: none; /*Döljer hamburgermenyn på större skärm*/
+    }
+
+    #menu {
+        display: flex;
+        gap: 20px;
+    }
+
+    #menu li:hover {
+        text-decoration: underline #f4f4f4;
+    }
+}
