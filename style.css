@@ -128,3 +128,31 @@ h1 {
     background-color: #870a4e;
     color: white;
 }
+
+/* Gallery styling */
+div.gallery {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+
+div.gallery-item {
+  margin: 5px;
+  border: 1px solid #ccc;
+  width: 250px;
+}
+
+div.gallery-item:hover {
+  border: 1px solid #777;
+}
+
+div.gallery-item img {
+  width: 100%;
+  height: auto;
+}
+
+div.gallery-item div.desc {
+  padding: 15px;
+  text-align: center;
+}
