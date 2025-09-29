@@ -1,4 +1,4 @@
-☕ JavaBean Café
+Projektnamn: ☕ JavaBean Café
 
 Ett frontend-projekt där vi tränar på att skapa en mobilanpassad hamburgarmeny med JavaScript och DOM-manipulation. Projektet är en del av vår träning i GitHub-flöden, dokumentation och responsiv design.
 
